@@ -1,0 +1,13 @@
+= RailsCasts Example Application
+
+Run these commands to try it out.
+
+  bundle
+  rake db:migrate
+  rake db:seed
+  rails s
+
+    遇到错误 Sprockets::FileNotFound couldn't find file 'jquery-ui'
+    需指定 jquery-rails 的版本 
+
+    gem 'jquery-rails', '~> 2.3.0'
