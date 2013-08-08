@@ -1,11 +1,7 @@
 
 require "bundler/capistrano"
 
-#server "192.168.1.103", :web, :app, :db, primary: true
-
-role :web, "192.168.1.106", :primary => true
-role :app, "192.168.1.106" 
-role :db,  "192.168.1.102", :primary => true
+server "192.168.1.106", :web, :app, :db, primary: true
 
 set :application, "store-activeadmin"
 set :user, "deployer"
