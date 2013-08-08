@@ -3,9 +3,9 @@ require "bundler/capistrano"
 
 #server "192.168.1.103", :web, :app, :db, primary: true
 
-role :web, "192.168.1.106"                          # Your HTTP server, Apache/etc
-role :app, "192.168.1.106"                          # This may be the same as your `Web` server
-role :db,  "192.168.1.102", :primary => true # This is where Rails migrations will run
+role :web, "192.168.1.106", :primary => true
+role :app, "192.168.1.106" 
+role :db,  "192.168.1.102", :primary => true
 
 set :application, "store-activeadmin"
 set :user, "deployer"
