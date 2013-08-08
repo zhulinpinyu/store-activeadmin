@@ -5,6 +5,7 @@ server "192.168.1.106", :web, :app, :db, primary: true
 
 set :application, "store-activeadmin"
 set :user, "deployer"
+set :password, "deployer"
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
